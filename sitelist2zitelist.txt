@@ -1,0 +1,1 @@
+cat return.txt | grep "address" | grep "        " | awk -F '\"' '{print $4}' > zitelist.txt
