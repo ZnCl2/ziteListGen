@@ -1,0 +1,1 @@
+cat sites.json | grep ": {" | grep "1" | awk -F '\"' '{print "python zeronet.py siteDownload", $2}' > zitedownload.sh
